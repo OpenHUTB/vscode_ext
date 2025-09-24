@@ -1,0 +1,61 @@
+{
+  "name": "carlaapi",
+  "displayName": "CarlaAPI",
+  "publisher": "misarb",
+  "description": "Extension provides intelligent code completion, documentation CARLA autonomous driving simulator API in Visual Studio Code.",
+  "icon": "images/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/misarb/carlaApiExtension"
+  },
+  "version": "0.0.2",
+  "engines": {
+      "vscode": "^1.94.0"
+  },
+  "categories": [
+      "Programming Languages"
+  ],
+  "activationEvents": [
+      "onLanguage:python"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+      "languages": [{
+          "id": "python",
+          "extensions": [".py"]
+      }],
+      "configuration": {
+          "title": "CARLA API",
+          "properties": {
+              "carlaapi.showClasses": {
+                  "type": "boolean",
+                  "default": true,
+                  "description": "Show class completions"
+              },
+              "carlaapi.showMethods": {
+                  "type": "boolean",
+                  "default": true,
+                  "description": "Show method completions"
+              },
+              "carlaapi.showProperties": {
+                  "type": "boolean",
+                  "default": true,
+                  "description": "Show property completions"
+              }
+          }
+      }
+  },
+  "scripts": {
+      "lint": "eslint .",
+      "pretest": "npm run lint",
+      "test": "vscode-test"
+  },
+  "devDependencies": {
+      "@types/vscode": "^1.94.0",
+      "@types/mocha": "^10.0.9",
+      "@types/node": "20.x",
+      "eslint": "^9.13.0",
+      "@vscode/test-cli": "^0.0.10",
+      "@vscode/test-electron": "^2.4.1"
+  }
+}
