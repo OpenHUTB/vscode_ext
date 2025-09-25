@@ -1,14 +1,14 @@
 {
-  "name": "hutbapi",
-  "displayName": "hutbAPI",
+  "name": "hutb",
+  "displayName": "hutb",
   "publisher": "OpenHUTB",
-  "description": "Extension provides intelligent code completion, documentation CARLA autonomous driving simulator API in Visual Studio Code.",
+  "description": "Extension provides intelligent code completion, documentation CARLA autonomous driving and AirSim simulator API in Visual Studio Code.",
   "icon": "images/logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/OpenHUTB/vscode_ext"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
       "vscode": "^1.94.0"
   },
