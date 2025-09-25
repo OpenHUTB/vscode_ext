@@ -101,7 +101,7 @@ If you encounter any issues:
 ## 发布到市场
 
 参考 [链接](https://juejin.cn/post/7402800227810852900) 。
-1.安装`vsce`
+1.下载并安装 [node 20](https://nodejs.org/en/download) ；并安装`vsce`
 ```shell
 npm i -g vsce
 ```
