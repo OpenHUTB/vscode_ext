@@ -1,36 +1,40 @@
-# Visual Studio Code 的 HUTB API 扩展
+# Visual Studio Code 的 HUTB 模拟器 API 扩展
 
-此扩展为 Visual Studio Code 中的 CARLA 自动驾驶模拟器 API 和 AirSim API 提供智能代码完成、文档和 IntelliSense 支持。
+此扩展为 Visual Studio Code 中的 Carla 自动驾驶模拟器 API 和 AirSim API 提供智能代码完成、文档和 IntelliSense 支持。
 
 ## 特性
 
 ### 智能代码补全
+
 - CARLA 类、方法和属性的上下文感知补全
-- Automatically shows relevant methods and properties when typing class names
-- Rich documentation preview in completion items
+- 输入类名时自动显示相关方法和属性
+- 完成项目中的富文本的预览
 
 ![Code Completion](images/completion.gif)
 
+
 ### 方法签名帮助
-- Real-time parameter information while typing method calls
-- Parameter types and default values
-- Documentation for each parameter
+
+- 键入方法调用时的实时参数信息
+- 参数类型和默认值
+- 每个参数的文档
+
 
 ### 悬停文档
-- Detailed documentation on hover for classes, methods, and properties
-- Shows method signatures and return types
-- Displays access information for properties (read/write)
+- 有关类、方法和属性的悬停的详细文档
+- 显示方法签名和返回类型
+- 显示属性的访问信息（读/写）
 
 ### 智能上下文检测
-- Shows only relevant completions based on context
-- Class suggestions when starting a new statement
-- Method and property suggestions only for the current class being typed
+- 仅显示基于上下文的相关完成内容
+- 开始新语句时的类建议
+- 仅针对当前正在输入的类提供方法和属性建议
 
 ## 要求
 
-- Visual Studio Code version 1.94.0 or higher
-- Python extension for VS Code
-- CARLA Python API installed in your environment (optional)
+- Visual Studio Code version 1.94.0 或更高版本
+- VS Code 的 Python 扩展
+- 在您的环境中安装 Carla Python API（可选）
 
 ## 安装
 
@@ -49,8 +53,8 @@
 
 编辑 Python 文件时，该扩展程序会自动激活。以下是主要功能的使用方法：
 
-1. **Class Completion**
-   - Start typing a CARLA class name
+1. **类名补全**
+   - 开始输入 Carla 类名
    - Press Ctrl+Space to see available classes
    
 2. **Method and Property Completion**
@@ -100,7 +104,6 @@ If you encounter any issues:
 
 ## 发布到市场
 
-参考 [链接](https://juejin.cn/post/7402800227810852900) 。
 1.下载并安装 [node 20](https://nodejs.org/en/download) ；并安装`vsce`
 ```shell
 npm i -g vsce
@@ -111,7 +114,7 @@ npm i -g vsce
 vsce package
 ```
 
-3.测试
+3.打开`extension.js`，然后按 F5(Run->Start Debugging)，会打开一个新的VScode，新建python脚本，以测试效果。
 
 4.登录：
 ```shell
@@ -126,6 +129,10 @@ vsce publish
 
 等待几分钟就可以在 [扩展的链接](https://marketplace.visualstudio.com/items?itemName=OpenHUTB.hutbapi) 、[Hub的链接](https://marketplace.visualstudio.com/manage/publishers/OpenHUTB/extensions/hutbapi/hub) 中看到插件
 
+
+6.（其他）取消发布
+
+访问 [管理页面](https://marketplace.visualstudio.com/manage/) ，右键所需要删除的扩展进行删除。
 
 ## 发行说明
 
@@ -153,6 +160,7 @@ This extension is licensed under the MIT License. See the LICENSE file for detai
 - CARLA Simulator team for their excellent documentation
 - VS Code extension development community
 - [carlaApiExtension](https://github.com/OpenHUTB/vscode_ext)
+- [发布方法](https://juejin.cn/post/7402800227810852900) 。
 
 ## 支持
 
