@@ -159,6 +159,7 @@ vsce publish
 
 - Carla 仿真器团队提供的出色文档
 - VS Code 扩展开发社区
+- [Publish VS Code Extension — GitHub Action](https://github.com/marketplace/actions/publish-vs-code-extension)
 - [carlaApiExtension](https://github.com/OpenHUTB/vscode_ext)
 - [发布方法](https://juejin.cn/post/7402800227810852900) 。
 

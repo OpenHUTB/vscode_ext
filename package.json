@@ -2,7 +2,7 @@
   "name": "hutb",
   "displayName": "hutb",
   "publisher": "OpenHUTB",
-  "description": "此扩展为 Visual Studio Code 中的 Carla 自动驾驶模拟器 API、AirSim 无人机模拟器 API、Mujoco 模拟器 API 提供智能代码完成、文档和 IntelliSense 支持。",
+  "description": "为 Carla 自动驾驶模拟器 API、AirSim 无人机模拟器 API、Mujoco 模拟器 API 提供智能代码补全、文档和 IntelliSense 支持。",
   "icon": "images/logo.png",
   "repository": {
     "type": "git",
