@@ -1,12 +1,12 @@
 # Visual Studio Code 的 HUTB 模拟器 API 扩展
 
-此扩展为 Visual Studio Code 中的 Carla 自动驾驶模拟器 API 和 AirSim API 提供智能代码完成、文档和 IntelliSense 支持。
+此扩展为 Visual Studio Code 中的 Carla 自动驾驶模拟器 API、AirSim 无人机模拟器 API、Mujoco 模拟器 API 提供智能代码完成、文档和 IntelliSense 支持。
 
 ## 特性
 
 ### 智能代码补全
 
-- CARLA 类、方法和属性的上下文感知补全
+- Carla 类、方法和属性的上下文感知补全
 - 输入类名时自动显示相关方法和属性
 - 完成项目中的富文本的预览
 
@@ -39,14 +39,14 @@
 ## 安装
 
 1. 通过 VS Code 安装扩展：
-   - Open VS Code
-   - Go to Extensions (Ctrl+Shift+X)
-   - Search for "CARLA API"
-   - Click Install
+   - 打开 VS Code
+   - 前往左侧工具栏中的扩展 (Ctrl+Shift+X)
+   - 搜索 "hutb"
+   - 点击安装(Install)
 
 2. 或者，下载 VSIX 文件并手动安装：
    ```bash
-   code --install-extension carlaapi-0.0.1.vsix
+   code --install-extension hutb-0.0.4.vsix
    ```
 
 ## 使用
@@ -55,16 +55,16 @@
 
 1. **类名补全**
    - 开始输入 Carla 类名
-   - Press Ctrl+Space to see available classes
+   - 按 Ctrl+Space 查看可用的类
    
-2. **Method and Property Completion**
-   - Type a class name followed by a dot (e.g., `Actor.`)
-   - Completions will automatically show available methods and properties
+2. **方法和属性补全**
+   - 输入一个类名，后跟一个点（例如， `Actor.`）
+   - 完成将自动显示可用的方法和属性
    
-3. **Signature Help**
-   - Type an opening parenthesis after a method name
-   - Signature help will show parameter information
-   - Use commas to navigate through parameters
+3. **签名帮助**
+   - 在方法名称后输入一个左括号
+   - 签名帮助将显示参数信息
+   - 使用逗号浏览参数
 
 ## 示例
 
@@ -76,18 +76,18 @@ actor = world.spawn_actor()  # 显示 spawn_actor 参数
 
 ## 已知的问题
 
-- Method overloads are currently not supported
-- Some complex type hints might not be parsed correctly
-- Documentation might be incomplete for some CARLA API methods
+- 目前不支持方法重载
+- 某些复杂类型提示可能无法正确解析
+- 某些 Carla API 方法的文档可能不完整
 
-## Troubleshooting
+## 故障排除
 
-If you encounter any issues:
+如果您遇到任何问题：
 
-1. Ensure you have the latest version of VS Code installed
-2. Check that the Python extension is installed and configured
-3. Verify that your CARLA Python API is properly installed
-4. Try reloading VS Code if completions don't appear
+1. 确保安装了最新版本的 VS Code
+2. 检查 Python 扩展是否已安装并配置
+3. 验证您的 hutb Python API 是否已正确安装
+4. 如果没有出现补全，请尝试重新加载 VS Code
 
 ## 贡献
 
@@ -136,29 +136,29 @@ vsce publish
 
 ## 发行说明
 
-### 0.0.1 - Initial Release
-- Basic completion for CARLA API classes
-- Method and property suggestions
-- Signature help
-- Hover documentation
-- Context-aware completions
+### 0.0.1 - 初始版本
+- Carla API 类的补全完成
+- 方法和属性建议
+- 签名帮助
+- 悬停文档
+- 上下文感知补全
 
 ## 计划的功能
 
-- Support for method overloads
-- Improved type hint parsing
-- Integration with CARLA documentation
-- Quick actions for common CARLA operations
+- 支持方法重载
+- 改进的类型提示解析
+- 与 hutb 文档集成
+- 常见 Carla 操作的快速操作
 - Code snippets for common patterns
 
 ## 许可证
 
-This extension is licensed under the MIT License. See the LICENSE file for details.
+此扩展遵循 MIT 许可证。详情请参阅 [LICENSE 文件](./LICENSE) 。
 
 ## 致谢
 
-- CARLA Simulator team for their excellent documentation
-- VS Code extension development community
+- CARLA 仿真器团队提供的出色文档
+- VS Code 扩展开发社区
 - [carlaApiExtension](https://github.com/OpenHUTB/vscode_ext)
 - [发布方法](https://juejin.cn/post/7402800227810852900) 。
 
@@ -170,4 +170,4 @@ This extension is licensed under the MIT License. See the LICENSE file for detai
 
 ---
 
-**Enjoy using the CARLA API Extension!**
+**开始享受使用 hutb API 扩展吧！**
