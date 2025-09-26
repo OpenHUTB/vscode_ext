@@ -1,6 +1,6 @@
 # Visual Studio Code 的 HUTB 模拟器 API 扩展
 
-此扩展为 Visual Studio Code 中的 Carla 自动驾驶模拟器 API、AirSim 无人机模拟器 API、Mujoco 模拟器 API 提供智能代码完成、文档和 IntelliSense 支持。
+为 Carla 自动驾驶模拟器 API、AirSim 无人机模拟器 API、Mujoco 模拟器 API 提供智能代码补全、文档和 IntelliSense 支持。
 
 ## 特性
 
@@ -157,7 +157,7 @@ vsce publish
 
 ## 致谢
 
-- CARLA 仿真器团队提供的出色文档
+- Carla 仿真器团队提供的出色文档
 - VS Code 扩展开发社区
 - [carlaApiExtension](https://github.com/OpenHUTB/vscode_ext)
 - [发布方法](https://juejin.cn/post/7402800227810852900) 。
