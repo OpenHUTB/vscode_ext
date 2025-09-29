@@ -97,7 +97,7 @@ actor = world.spawn_actor()  # 显示 spawn_actor 参数
    git clone  https://github.com/OpenHUTB/vscode_ext
 ```
 
-2. 创建一个特性分支
+2. 创建一个特性分支，具体修改请参考 [开发指南](./vsc-extension-quickstart.md)
 3. 提交(commit)你的修改
 4. 推送(push) 到特性分支
 5. 创建拉取请求(Pull Request)
@@ -116,13 +116,26 @@ vsce package
 
 3.打开`extension.js`，然后按 F5(Run->Start Debugging)，会打开一个新的VScode，新建python脚本，以测试效果。
 
-4.登录：
+
+### 自动发布
+
+1.修改 [`package.json`](./package.json) 中的版本号字段`version`，增加一个版本号
+
+2.执行打标签命令（将`0.1.4`替换为发布的最新版本号）：
+```shell
+git tag 0.1.4
+git push origin 0.1.4
+```
+
+### 手动发布
+
+1.登录：
 ```shell
 vsce login OpenHUTB
 ```
 输入 Token 。
 
-5.发布
+2.发布
 ```shell
 vsce publish
 ```
@@ -149,7 +162,7 @@ vsce publish
 - 改进的类型提示解析
 - 与 hutb 文档集成
 - 常见 Carla 操作的快速操作
-- Code snippets for common patterns
+- 常见模式的代码片段
 
 ## 许可证
 
